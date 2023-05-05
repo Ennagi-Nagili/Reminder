@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateText"
+        android:text="Date and time"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_margin="15dp"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/dateText"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/month"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/dateText"
+        android:layout_toEndOf="@+id/year"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/dateText"
+        android:layout_toEndOf="@id/month"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hour"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/year"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/minute"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/year"
+        android:layout_toEndOf="@id/hour"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headText"
+        android:text="Head"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/hour"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:layout_below="@id/headText"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoText"
+        android:text="Info"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/head"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_below="@id/infoText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/add"
+        android:layout_marginHorizontal="80dp"
+        android:layout_below="@id/info"
+        android:layout_marginTop="25dp"
+        android:text="Add"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
